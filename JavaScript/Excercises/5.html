@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h>Cart Quantity</h>
+  <p></p>
+  <button onclick="
+    console.log(`Cart Quantity: ${cartQuantity}` );
+  ">Show Quantity</button>
+
+  <button onclick="
+    cartQuantity++;
+    alert('Product added to cart');
+  ">Add to Cart</button>
+
+
+  <button onclick="
+    cartQuantity += 2;
+    alert('2 Products added to cart');
+  ">+2</button>
+
+  <button onclick="
+    cartQuantity += 3;
+    alert('3 Products added to cart');
+  ">+3</button>
+
+  <button onclick="
+  cartQuantity += 4;
+  alert('4 products added to cart')">+4</button>
+
+   <button onclick="
+   cartQuantity += 5;
+   alert('5 products added to cart')">+5</button>
+   
+<button onclick="
+cartQuantity--;
+alert('Product removed from the cart');
+">Remove Product</button>
+
+<button onclick="
+    cartQuantity -= 2;
+    alert('2 Products removed from cart');
+  ">-2</button>
+
+  <button onclick="
+    cartQuantity -= 3;
+    alert('3 Products removed from cart');
+  ">-3</button>
+
+  <button onclick="
+    cartQuantity = 0;
+    alert('Cart was reset');
+  ">Reset cart</button>
+  <script>
+    let cartQuantity = 0;
+    //Excercise 5a
+    let name = 'Ritesh';
+
+    //Excercise 5b 
+    console.log(`My name is: ${name}`);
+
+    //Excercise 5c
+    let coffee = 5;
+    let bagels = 3;
+    let soup = 9;
+    let cost = (coffee + 2*bagels + soup);
+ 
+
+    //Excercise 5d
+    console.log(`Cost of food :$${cost}`);
+    //Excercise 53,5f
+    const tax = (0.1*cost);
+    //Exercise 5g
+    console.log(`Tax (10%): $${tax}`);
+    let totalCost = cost + tax;
+    console.log(`Total Cost :$${totalCost}`);
+  </script>
+</body>
+</html>
